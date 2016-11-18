@@ -17,6 +17,7 @@ export default class VisibleTodoList extends Component{
             key={todo.id}
             {...todo}
             onClick={() => this.onTodoClick(todo.id)}
+            actions={this.props.actions}
           />
         )}
       </ul>
